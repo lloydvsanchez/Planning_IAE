@@ -8,7 +8,7 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-EnvoiLog.create(date_prochain: Date.parse('2021-09-24')) unless EnvoiLog.any?
+#EnvoiLog.create(date_prochain: Date.parse('2021-09-24')) unless EnvoiLog.any?
 
 Ouverture.create([
   { bloc: "A",

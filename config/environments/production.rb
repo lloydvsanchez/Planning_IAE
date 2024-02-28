@@ -121,6 +121,6 @@ Rails.application.configure do
   
   # set the session cookie to expire automatically 12.hours after creation
   config.session_store :cookie_store, expire_after: 12.hours
-
-
+  config.action_mailer.perform_deliveries = false
+  config.action_mailer.delivery_method = :test
 end

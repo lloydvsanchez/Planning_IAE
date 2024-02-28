@@ -131,7 +131,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_28_083302) do
     t.bigint "user_id"
     t.string "color"
     t.string "Forfait_HETD"
-    t.string "Taux_TD"
+    t.decimal "Taux_TD", precision: 10, scale: 2, default: "0.0"
     t.string "Code_Analytique"
     t.boolean "hors_catalogue", default: false
     t.boolean "archive"
